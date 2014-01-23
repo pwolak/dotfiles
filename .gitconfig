@@ -1,0 +1,14 @@
+[color]
+	branch = auto
+	diff = auto
+	status = auto
+	interactive = auto
+[alias]
+  co = checkout
+  st = status
+  l = log --abbrev-commit --graph --format='%Cgreen%h %Cblue%ad%Cred%d %Creset%s %Cgreen%an' --decorate=short --date=short
+[core]
+	editor = vim
+[user]
+	name = Pawel Wolak
+	email = wolak.pawel@gmail.com
