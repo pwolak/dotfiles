@@ -1,4 +1,5 @@
 set nocompatible
+filetype off
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
@@ -12,6 +13,7 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'tpope/vim-fugitive'
+Bundle 'scrooloose/nerdtree'
 
 let mapleader = " "
 nmap <leader>f <c-p>
@@ -25,7 +27,7 @@ map <F2> :NERDTreeToggle<CR>
 set number
 set ruler
 set cursorline
-set columns=126
+" set columns=126
 set encoding=utf-8
 
 " scroll when you are that far from edge
@@ -69,9 +71,9 @@ set backspace=indent,eol,start
 filetype plugin indent on
 
 " Default color scheme
- color desert
-"set background=dark
-"colorscheme solarized
+" color desert
+set background=dark
+colorscheme solarized
 
 " MacVIM shift+arrow-keys behavior (required in .vimrc)
 let macvim_hig_shift_movement = 1
