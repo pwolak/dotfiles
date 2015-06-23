@@ -14,6 +14,7 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'tpope/vim-fugitive'
 Bundle 'scrooloose/nerdtree'
+Bundle 'elixir-lang/vim-elixir'
 
 let mapleader = " "
 nmap <leader>f <c-p>
@@ -23,10 +24,16 @@ nmap <leader><leader> :e #<cr>
 syntax on
 set tabstop=2
 set shiftwidth=2
-map <F2> :NERDTreeToggle<CR>
+map <leader>t :NERDTreeToggle<CR>
 set number
 set ruler
 set cursorline
+
+" NERDTree
+let g:NERDChristmasTree = 1
+let g:NERDTreeMapOpenSplit = "s"
+let g:NERDTreeMapOpenVSplit = "v"
+
 " set columns=126
 set encoding=utf-8
 
@@ -83,3 +90,10 @@ set suffixes=.bak,~,.h,.swp,.aux,.log,.out,.toc
 
 " ignore those files when searching
 set wildignore=*.o,*.pdf,*.class,*.pyc
+
+" no .swp files"
+set nobackup
+set nowritebackup
+
+" share clipboard"
+set clipboard=unnamed

@@ -1,6 +1,10 @@
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
+export ANDROID_HOME=/Users/pwolak/android_testing/adt-bundle-mac-x86_64-20140702/sdk
+export SCREENSHOT_VIA_USB=true
+export PATH=$PATH:/Users/pwolak/android_testing/adt-bundle-mac-x86_64-20140702/sdk/platform-tools/:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools/:$HOME/bin
+
 # PATH=/usr/local/bin:/usr/local/sbin:/usr/local/share/python:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/Users/pwolak/Downloads/play-2.1.2
 PYTHONPATH=/usr/local/lib/python2.7/site-packages
 
@@ -25,3 +29,6 @@ NO_COLOUR="\[\033[0m\]"
 PS1="\W\[\033[0;32m\]\$(parse_git_branch_and_add_brackets) \[\033[0m\]\$ "
 
 [ -f /usr/local/share/python/virtualenvwrapper.sh ] && source /usr/local/share/python/virtualenvwrapper.sh
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
