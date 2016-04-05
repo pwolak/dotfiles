@@ -1,20 +1,31 @@
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" " let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+Plugin 'evanmiller/nginx-vim-syntax'
+Plugin 'nono/vim-handlebars'
+Plugin 'majutsushi/tagbar'
+Plugin 'bling/vim-airline'
+Plugin 'tpope/vim-endwise'
+Plugin 'tpope/vim-markdown'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'tmhedberg/matchit'
+Plugin 'mileszs/ack.vim'
+Plugin 'honza/vim-snippets'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'pangloss/vim-javascript'
+Plugin 'ervandew/supertab'
+Plugin 'kien/ctrlp.vim'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'tpope/vim-fugitive'
+Plugin 'scrooloose/nerdtree'
+Plugin 'elixir-lang/vim-elixir'
 
-Bundle 'gmarik/vundle'
-Bundle 'tpope/vim-endwise'
-Bundle 'vim-ruby/vim-ruby'
-Bundle 'pangloss/vim-javascript'
-Bundle 'ervandew/supertab'
-Bundle 'kien/ctrlp.vim'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'tpope/vim-fugitive'
-Bundle 'scrooloose/nerdtree'
-Bundle 'elixir-lang/vim-elixir'
+call vundle#end()
 
 let mapleader = " "
 nmap <leader>f <c-p>
